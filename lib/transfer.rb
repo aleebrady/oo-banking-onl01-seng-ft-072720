@@ -1,3 +1,5 @@
+require 'pry'
+
 class Transfer
   
   attr_reader :transfer #initializes the transfer
@@ -12,7 +14,8 @@ class Transfer
   end
   
   def valid?
-    sender.valid? && receiver.valid?
+    sender.valid? && receiver.valid? # sender and rcvr valid? true or false
+    
   end
   
 end
