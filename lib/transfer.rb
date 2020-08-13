@@ -15,7 +15,7 @@ class Transfer
   
   def valid?
     sender.valid? && receiver.valid? # sender and rcvr valid? true or false
-    
+    binding.pry
   end
   
 end
