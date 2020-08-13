@@ -22,7 +22,6 @@ class Transfer
       @status = "rejected" # if any of the conditions are not met, will reject transfer 
       "Transaction rejected. Please check your account balance." # displays message
     else
-      @status = "complete"
       sender.balance -= @amount
       receiver.balance += @amount
       @status = "complete"
