@@ -17,6 +17,8 @@ class Transfer
     sender.valid? && receiver.valid? # sender and rcvr valid? true or false
   end
   
-  def 
+  def execute_transaction
+    
+  end
   
 end
