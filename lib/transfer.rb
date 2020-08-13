@@ -29,10 +29,10 @@ class Transfer
   end
   
   def reverse_transfer
-    if @status == "complete"
-      sender.balance += @amount
-      receiver.balance -= @amount
-      @status = "reversed"
+    if @status == "complete" # if status is complete, transfer qualifies to be reversed
+      sender.balance += @amount #adds amount back to sender's balance 
+      receiver.balance -= @amount #subtracts amount from rcvr's balance
+      @status = "reversed" #updates the status of the transfer
   end
 end
   
